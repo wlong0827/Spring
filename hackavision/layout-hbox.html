@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" class="app bg-light">
+<head>  
+  <meta charset="utf-8" />
+  <title>Spring | Web Application</title>
+  <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/icon.css" type="text/css" />
+  <link rel="stylesheet" href="css/font.css" type="text/css" />
+  <link rel="stylesheet" href="css/app.css" type="text/css" />  
+    <!--[if lt IE 9]>
+    <script src="js/ie/html5shiv.js"></script>
+    <script src="js/ie/respond.min.js"></script>
+    <script src="js/ie/excanvas.js"></script>
+  <![endif]-->
+</head>
+<body class="" >
+    <section class="hbox stretch">
+    <!-- .aside -->
+    <aside class="bg-black aside" id="nav" style="width:220px">
+      <section class="vbox">
+        <header class="header header-md navbar navbar-fixed-top-xs bg">
+              <div class="navbar-header  ">
+        <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="landing.html" class="navbar-brand">
+          <img src="images/leaf.png" class="m-r-sm" alt="scale">
+          <span class="hidden-nav-xs">Spring</span>
+        </a>
+        <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
+          <i class="fa fa-cog"></i>
+        </a>
+      </div>            </header>
+            <section class="w-f scrollable">
+              <!-- nav -->
+              <div class=slim-scroll data-height=auto data-disable-fade-out=true data-distance=0 data-size=10px data-railOpacity=0.2>
+  
+                <!-- nav -->                 
+                <nav class="nav-primary hidden-xs">
+                    <div class="line dk hidden-nav-xs"></div>
+                  <div class="text-muted text-sm hidden-nav-xs padder m-t-sm m-b-sm">Visions</div>
+                  <ul class="nav nav-main" data-ride="collapse">
+                    <li >
+                      <a href="layout-hbox.html" class="auto">
+                        <i class="i i-statistics icon">
+                        </i>
+                        <span class="font-bold">#EmpowerWomen</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="layout-hbox.html" class="auto">
+                        <span class="pull-right text-muted">
+                        </span>
+                        <i class="i i-stack icon">
+                        </i>
+                        <span class="font-bold">#OpenGovernment</span>
+                      </a>
+                    </li>
+                    <li >
+                      <a href="layout-hbox.html" class="auto">
+                        <span class="pull-right text-muted">
+                        </span>
+                        <i class="i i-lab icon">
+                        </i>
+                        <span class="font-bold">#EradicatePoverty</span>
+                      </a>
+                      
+                    <li >
+                      <a href="#" class="auto">
+                        <span class="pull-right text-muted">
+                        </span>
+                        <i class="i i-docs icon">
+                        </i>
+                        <span class="font-bold">#Homes4Refugees</span>
+                      </a>
+                      
+                  </ul>
+                  
+                </nav>
+                <!-- / nav -->
+              </div>
+              <!-- / nav -->
+            </section>
+            
+            <footer class="footer hidden-xs no-padder text-center-nav-xs">
+                <div class="line dk hidden-nav-xs"></div>
+                  <div class="text-muted text-sm hidden-nav-xs padder m-t-sm m-b-sm">My Profile</div>
+                
+                <div class = "hidden-xs" style="height:35px; margin-bottom:10px; margin-top:10px">
+                    <center>
+                  <a href="profile.html" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="thumb-sm avatar" style= "margin-right:10px">
+                      <img src="images/a0.png">
+                    </span>
+                    Will Long
+                  </a>
+                        </center>
+                </div>
+                
+              <a href="modal.lockme.html" data-toggle="ajaxModal" class="btn btn-icon icon-muted btn-inactive pull-right m-l-xs m-r-xs hidden-nav-xs">
+                <i class="i i-logout"></i>
+              </a>
+              <a href="#nav" data-toggle="class:nav-xs" class="btn btn-icon icon-muted btn-inactive m-l-xs m-r-xs">
+                <i class="i i-circleleft text"></i>
+                <i class="i i-circleright text-active"></i>
+              </a>
+            </footer>
+      </section>
+    </aside>
+    <!-- /.aside -->
+    <section id="content">
+      <section class="hbox stretch">
+            <section>
+              <section class="vbox">
+                <section class="scrollable wrapper">  
+                  <div class="panel b-a padder">
+                    <div class="row">
+                      <div class="col-sm-8 m-b m-t">  
+                          <center>
+                        <button class="btn btn-default btn-rounded" id="btn-1" href="#btn-1" data-toggle="class:btn-success">
+		                  <i class="fa fa-globe text"></i>
+		                  <span class="text"> World</span>
+		                  <i class="fa fa-globe text-active"></i>
+		                  <span class="text-active">World</span>
+		                </button>
+                          
+                        <button class="btn btn-default btn-rounded" id="btn-2" href="#btn-2" data-toggle="class:btn-success" style="margin-left:20px">
+		                  <i class="fa fa-users text"></i>
+		                  <span class="text"> Community</span>
+		                  <i class="fa fa-users text-active"></i>
+		                  <span class="text-active">Community</span>
+		                </button>
+                          
+                          <button class="btn btn-default btn-rounded" id="btn-3" href="#btn-3" data-toggle="class:btn-success" style="margin-left:20px">
+		                  <i class="fa fa-user text"></i>
+		                  <span class="text"> Personal</span>
+		                  <i class="fa fa-user text-active"></i>
+		                  <span class="text-active">Personal</span>
+		                </button>
+                          </center>
+                      </div>
+                      <div class="col-sm-4 m-b m-t">
+                        <form role="search">
+                          <div class="form-group m-b-none">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Search">
+                              <span class="input-group-btn">
+                                <button type="submit" class="btn btn-default btn-icon"><i class="fa fa-search"></i></button>
+                              </span>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>                
+                  <div class="blog-post">                   
+                    <div class="post-item">
+                      <div class="caption wrapper-lg">
+                        <h2 class="post-title"><a href="timeline.html">7 things you need to know about the flat design</a></h2>
+                        <div class="post-sum">
+                          <p>Donations are a crucial part of our culture. And that's a great thing. However,  in many cases, the fathers misuse the donated goods. So, the giving culture isn't utilized, and those in need are still in need... 
+                              
+                        <br><br>
+                              My proposed solution is Bread For Life. I want to ensure that the donations collected feed 100 families on a daily basis and this is how. 
+                          </p>
+                        </div>
+                        <div class="line line-lg"></div>
+                        <div class="text-muted">
+                          <i class="fa fa-user icon-muted"></i> by <a href="#" class="m-r-sm">Dania Abu-Hussein</a>
+                          <i class="fa fa-clock-o icon-muted"></i> Feb 20, 2017
+                          <a href="#" class="m-l-sm"><i class="fa fa-comment-o icon-muted"></i> 12 comments</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="post-item">
+                      <div class="caption wrapper-lg">
+                        <h2 class="post-title"><a href="#">Bootstrap 3: What you need to know</a></h2>
+                        <div class="post-sum">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat. Vestibulum ullamcorper sodales nisi nec condimentum. Mauris convallis mauris at pellentesque volutpat. 
+                          </p>
+                          <h3>Html5 and CSS3</h3>
+                          <p>
+                          Phasellus at ultricies neque, quis malesuada augue. Donec eleifend condimentum nisl eu consectetur. Integer eleifend, nisl venenatis consequat iaculis, lectus arcu malesuada sem, dapibus porta quam lacus eu neque.</p>
+                        </div>
+                        <div class="line line-lg"></div>
+                        <div class="text-muted">
+                          <i class="fa fa-user icon-muted"></i> by <a href="#" class="m-r-sm">Samuel Liu</a>
+                          <i class="fa fa-clock-o icon-muted"></i> Feb 15, 2017
+                          <a href="#" class="m-l-sm"><i class="fa fa-comment-o icon-muted"></i> 4 comments</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    
+                    <div class="post-item">
+                      <div class="post-media">
+                        <section class="m-b-none">
+                          <div class="carousel auto slide" id="c-fade">
+                              <ol class="carousel-indicators out">
+                                <li data-target="#c-fade" data-slide-to="0" class="active"></li>
+                                <li data-target="#c-fade" data-slide-to="1" class=""></li>
+                              </ol>
+                              <div class="carousel-inner">
+                                <div class="item bg-light dker wrapper active text-center">
+                                  <span class="h2"><i class="fa fa-clock-o fa-5x m-t text-white"></i></span>
+                                  <p class="text-muted m-t m-b-lg">Time saving</p>
+                                </div>
+                                <div class="item bg-light dk wrapper text-center">
+                                  <span class="h2"><i class="fa fa-file-o fa-5x m-t text-white"></i></span>
+                                  <p class="text-muted m-t m-b-lg">Full documents</p>
+                                </div>
+                              </div>
+                              <a class="left carousel-control" href="#c-fade" data-slide="prev">
+                                <i class="fa fa-angle-left"></i>
+                              </a>
+                              <a class="right carousel-control" href="#c-fade" data-slide="next">
+                                <i class="fa fa-angle-right"></i>
+                              </a>
+                          </div>
+                        </section>
+                      </div>
+                      <div class="caption wrapper-lg">
+                        <h2 class="post-title"><a href="#">7 things you need to know about the flat design</a></h2>
+                        <div class="post-sum">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat. Vestibulum ullamcorper sodales nisi nec condimentum. Mauris convallis mauris at pellentesque volutpat. 
+                          <br><br>
+                          Phasellus at ultricies neque, quis malesuada augue. Donec eleifend condimentum nisl eu consectetur. Integer eleifend, nisl venenatis consequat iaculis, lectus arcu malesuada sem, dapibus porta quam lacus eu neque.</p>
+                        </div>
+                        <div class="line line-lg"></div>
+                        <div class="text-muted">
+                          <i class="fa fa-user icon-muted"></i> by <a href="#" class="m-r-sm">Admin</a>
+                          <i class="fa fa-clock-o icon-muted"></i> Feb 20, 2013
+                          <a href="#" class="m-l-sm"><i class="fa fa-comment-o icon-muted"></i> 2 comments</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="post-item">
+                      <div class="caption wrapper-lg">
+                        <h2 class="post-title"><a href="#">How do we Rebuild Iraq?</a></h2>
+                        <div class="post-sum">
+                          The inability of Arab leaders to draw the right lessons from Saddam's rise and collapse - after all, he was one of the Arab dictators himself - leads me to contemplate the sterility of their regimes.
+
+Although Saddam's intolerance and brutality was well known in the West, it came as news to millions in the Muslim world who had been deluded by the regime's pan-Arab slogans, which described him as the knight of the Arabs. <br><br>But Iraqis, as well as the citizens of the other 21 Arab countries, have long yearned for freedom, democracy, progress, and modernisation.
+
+The American soldiers, even with their sophisticated weapons, cannot achieve this goal by force. Democracy is the product of social, economic and political change. But the American occupation could help to shed light on the Arab world's own weaknesses.
+                        </div>
+                        <div class="line line-lg"></div>
+                        <div class="text-muted">
+                          <i class="fa fa-user icon-muted"></i> by <a href="#" class="m-r-sm">Ahmed Obed</a>
+                          <i class="fa fa-clock-o icon-muted"></i> Feb 15, 2013
+                          <a href="#" class="m-l-sm"><i class="fa fa-comment-o icon-muted"></i> 24 comments</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="post-item">
+                      <div class="caption wrapper-lg">
+                        <h2 class="post-title"><a href="#">Qatari Youth for Egypt</a></h2>
+                        <div class="post-sum">
+                          The first half of the chapter focuses on Qatari policies toward the Libyan uprising and describes how the campaign to oust Gaddafi and Al Jazeera’s pioneering coverage of the early phase of the Arab uprisings initially won Qatar global attention and international acclaim. However, the over-extension of Qatari policy and power led to a backlash in Libya that gained momentum once the extent of Qatari involvement became known. 
+                            <br><br>
+                            The second half of the chapter concentrates on the subsequent attempt to rally regional and international support for intervening in the worsening conflict in Syria. When this was not forthcoming, Qatari policy became more unilateralist and unpredictable, exposing in the process the limitations facing small states in international politics.
+                        </div>
+                        <div class="line line-lg"></div>
+                        <div class="text-muted">
+                          <i class="fa fa-user icon-muted"></i> by <a href="#" class="m-r-sm">Ahmed Obed</a>
+                          <i class="fa fa-clock-o icon-muted"></i> Feb 15, 2013
+                          <a href="#" class="m-l-sm"><i class="fa fa-comment-o icon-muted"></i> 9 comments</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  <div class="text-center m-t-lg m-b-lg">
+                    <ul class="pagination pagination-md">
+                      <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+                      <li class="active"><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+                    </ul>
+                  </div>
+                  
+                </section>
+              </section>
+            </section>
+          
+<!--
+            <aside class="aside-md">
+              <section class="vbox">
+                <header class="header header-md navbar b-b bg-white" data-toggle="shift:prependTo" data-target="#content">
+                  <ul class="nav navbar-nav m-n hidden-xs nav-user user">
+                    <li class="hidden-xs">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="i i-chat3"></i>
+                        <span class="badge badge-sm up bg-danger m-l-n-sm count">2</span>
+                      </a>
+                      <section class="dropdown-menu aside-xl pull-right">
+                        <section class="panel bg-white">
+                          <header class="panel-heading b-light bg-light">
+                            <strong>You have <span class="count">2</span> notifications</strong>
+                          </header>
+                          <div class="list-group list-group-alt animated fadeInRight">
+                            <a href="#" class="media list-group-item">
+                              <span class="pull-left thumb-sm">
+                                <img src="images/a0.png" alt="John said" class="img-circle">
+                              </span>
+                              <span class="media-body block m-b-none">
+                                Use awesome animate.css<br>
+                                <small class="text-muted">10 minutes ago</small>
+                              </span>
+                            </a>
+                            <a href="#" class="media list-group-item">
+                              <span class="media-body block m-b-none">
+                                1.0 initial released<br>
+                                <small class="text-muted">1 hour ago</small>
+                              </span>
+                            </a>
+                          </div>
+                          <footer class="panel-footer text-sm">
+                            <a href="#" class="pull-right"><i class="fa fa-cog"></i></a>
+                            <a href="#notes" data-toggle="class:show animated fadeInRight">See all the notifications</a>
+                          </footer>
+                        </section>
+                      </section>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="thumb-sm avatar pull-left">
+                          <img src="images/a0.png">
+                        </span>
+                        Will Long <b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu animated fadeInRight">
+                        <span class="arrow top"></span>
+                        <li>
+                          <a href="#">Settings</a>
+                        </li>
+                        <li>
+                          <a href="profile.html">Profile</a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="badge bg-danger pull-right">3</span>
+                            Notifications
+                          </a>
+                        </li>
+                        <li>
+                          <a href="docs.html">Help</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                          <a href="modal.lockme.html" data-toggle="ajaxModal" >Logout</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </header>
+                <section class="scrollable wrapper-md bg-light dker">
+                    <b>Activity Feed</b>
+                    <hr>
+                  <ul class="list-unstyled m-b-lg">
+                    <li>
+                        <p>Morbi nec <a href="#" class="text-info">@Jonathan George</a> nunc condimentum ipsum dolor sit amet, consectetur</p>
+                        <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 hour ago</small>
+                    </li>
+                      <hr>
+                      
+                    <li>                     
+                        <p><a href="#" class="text-info">@Josh Long</a> Vestibulum ullamcorper sodales nisi nec adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis</p>
+                        <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 hours ago</small>
+                    </li>
+                      <hr>
+                      <li>
+                        <p>Morbi nec <a href="#" class="text-info">@Jonathan George</a> nunc condimentum ipsum dolor sit amet, consectetur</p>
+                        <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 hour ago</small>
+                    </li>
+                      <hr>
+                      <li>                     
+                        <p><a href="#" class="text-info">@Josh Long</a> Vestibulum ullamcorper sodales nisi nec adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis</p>
+                        <small class="block text-muted"><i class="fa fa-clock-o"></i> 2 hours ago</small>
+                    </li>
+                      <hr>
+                      <li>
+                        <p>Morbi nec <a href="#" class="text-info">@Jonathan George</a> nunc condimentum ipsum dolor sit amet, consectetur</p>
+                        <small class="block text-muted"><i class="fa fa-clock-o"></i> 3 hour ago</small>
+                    </li>
+                      <li>                     
+                        <p><a href="#" class="text-info">@Josh Long</a> Vestibulum ullamcorper sodales nisi nec adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis</p>
+                        <small class="block text-muted"><i class="fa fa-clock-o"></i> 5 hours ago</small>
+                    </li>
+                  </ul>
+                                    
+                </section>
+              </section>
+            </aside>
+-->
+          </section>
+      <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+    </section>
+  </section>
+  <script src="js/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.js"></script>
+  <!-- App -->
+  <script src="js/app.js"></script>  
+  <script src="js/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/app.plugin.js"></script>
+</body>
+</html>
