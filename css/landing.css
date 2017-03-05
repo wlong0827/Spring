@@ -41,13 +41,14 @@ h3{font-size: 30px;font-weight: 300}
 }
 
 .intro{
-	background: url(../images/intro.jpg) #126da7 center top no-repeat;
+	background: url(../images/home.JPG) #4ca752 center top no-repeat;
 	background-size: cover;	
 }
 .intro > div{
 	padding: 15% 0;
-	background-color: #126da7;
-	background-color: rgba(18, 109, 167, 0.75);
+/*	background-color: #4ca752;*/
+    
+    background-color: rgba(18, 109, 167, 0.75);
 }
 
 .phone-img{
